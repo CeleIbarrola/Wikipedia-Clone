@@ -1,0 +1,33 @@
+:root{
+    --primary-color:#36c;
+    --line-color:#878788;
+    --second-line-color: #c6c6c7;
+    --text-color:#54595d;
+    --hover-color:#dbdbdd;
+    --background-color: #f8f9fa;
+}
+footer{
+    width: 100vw;
+    height: 490px;
+    margin: 20px 20px;
+    padding: 42px 13px 13px 13px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 0.4fr;
+    grid-template-areas: 
+    "one two"
+    "three two"
+    "four four";
+}
+footer .footer-central-container{
+    grid-area: two;
+}
+footer .footer-top-container{
+    grid-area: one;
+}
+footer .footer-sidebar-container{
+    grid-area: three;
+}
+footer .footer-border-bottom{
+    grid-area: four;
+}
